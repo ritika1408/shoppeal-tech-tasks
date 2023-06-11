@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+    /* color : #fff; */
+    background-color: #A0D8B3
+
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1{ 
+	font-size: 50px;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;;
+    color: brown;
+	margin-bottom: 1rem;
+
+	text-align: center;
+}
+
+
+#work__form{
+    display: flex;
+
+}
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+#task__input{
+	flex: 1 1 0%;
+	background-color: #E3F4F4;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	font-size: 1.25rem;
+
+}
+#task__input::placeholder {
+	color: #643843;
+	font-weight: 200;
+	/* font-size: 1.25rem; */
+}
+
+#task__submit {
+	color: #000C66;
+	font-size: 1.25rem;
+	font-weight: 700;
+	background-image: linear-gradient(to right, #000C66, #EF7C8E);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#task__submit:hover {
+	opacity: 0.8;
+}
+
+#task__submit:active {
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.work__list {
+	padding: 1rem;
+}
+
+.work__list h2 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: #7E1717;
+	margin-bottom: 1rem;
+	/* font-family: 'Muli', sans-serif ; */
+
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color:#F9F5F6;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+#tasks .task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	color: #7E1717;
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+	
+}
+
+.task .content .text:not(:read-only) {
+	color: #DB1F48;
+}
+
+.task .modify {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .modify button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .modify button:hover {
+	opacity: 0.8;
+}
+
+.task .modify button:active {
+	opacity: 0.6;
+}
+
+.task .modify .edit {
+	background-image: linear-gradient(to right, #3B0918,  #EF7C8E);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    
+}
+
+.task .modify .delete {
+	color: crimson;
+} 
